@@ -1,10 +1,19 @@
-import { View, Text } from 'react-native';
+import ThemedText from '@/presentation/shared/ThemedText';
+import ThemedView from '@/presentation/shared/ThemedView';
+import { Link } from 'expo-router';
+
 
 const ModalScreen = () => {
   return (
-    <View>
-      <Text>ModalScreen</Text>
-    </View>
+    <ThemedView>
+      <Link asChild href="/modal/modal-window" className='mx-4'>
+        <ThemedText 
+          className='text-white dark:text-dark-text my-2 text-xl text-center bg-light-primary dark:bg-dark-primary rounded-xl'
+        >
+          Abrir Modal
+        </ThemedText>
+      </Link>
+    </ThemedView>
   );
 };
 export default ModalScreen;
