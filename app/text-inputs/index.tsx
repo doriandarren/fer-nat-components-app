@@ -1,7 +1,7 @@
-import ThemedCard from '@/images/FadeInImage.tsx/shared/ThemedCard';
-import ThemedText from '@/images/FadeInImage.tsx/shared/ThemedText';
-import ThemedTextInput from '@/images/FadeInImage.tsx/shared/ThemedTextInput';
-import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
+import ThemedCard from '@/presentation/shared/ThemedCard';
+import ThemedText from '@/presentation/shared/ThemedText';
+import ThemedTextInput from '@/presentation/shared/ThemedTextInput';
+import ThemedView from '@/presentation/shared/ThemedView';
 import { useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 

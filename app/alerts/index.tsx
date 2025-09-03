@@ -1,5 +1,5 @@
-import ThemedButton from '@/images/FadeInImage.tsx/shared/ThemedButton';
-import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
+import ThemedButton from '@/presentation/shared/ThemedButton';
+import ThemedView from '@/presentation/shared/ThemedView';
 import React from 'react';
 import { Alert } from 'react-native';
 

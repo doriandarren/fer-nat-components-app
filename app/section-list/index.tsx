@@ -1,6 +1,6 @@
-import ThemedCard from '@/images/FadeInImage.tsx/shared/ThemedCard';
-import ThemedText from '@/images/FadeInImage.tsx/shared/ThemedText';
-import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
+import ThemedCard from '@/presentation/shared/ThemedCard';
+import ThemedText from '@/presentation/shared/ThemedText';
+import ThemedView from '@/presentation/shared/ThemedView';
 import { SectionList } from 'react-native';
 
 

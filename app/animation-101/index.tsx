@@ -1,6 +1,6 @@
 import { useAnimation } from '@/hooks/useAnimation';
-import ThemedButton from '@/images/FadeInImage.tsx/shared/ThemedButton';
-import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
+import ThemedButton from '@/presentation/shared/ThemedButton';
+import ThemedView from '@/presentation/shared/ThemedView';
 import { Animated, Easing } from 'react-native';
 
 const Animation101Screen = () => {
