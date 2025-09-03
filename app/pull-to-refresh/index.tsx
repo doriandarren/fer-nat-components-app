@@ -1,6 +1,6 @@
 import { useThemeColor } from '@/hooks/useThemeColor';
-import ThemedText from '@/presentation/shared/ThemedText';
-import ThemedView from '@/presentation/shared/ThemedView';
+import ThemedText from '@/images/FadeInImage.tsx/shared/ThemedText';
+import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
 import { useState } from 'react';
 import { RefreshControl, ScrollView } from 'react-native';
 

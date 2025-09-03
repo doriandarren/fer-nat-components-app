@@ -1,8 +1,7 @@
-import ThemedCard from '@/presentation/shared/ThemedCard';
-import ThemedSwitch from '@/presentation/shared/ThemedSwitch';
-import ThemedView from '@/presentation/shared/ThemedView';
+import ThemedCard from '@/images/FadeInImage.tsx/shared/ThemedCard';
+import ThemedSwitch from '@/images/FadeInImage.tsx/shared/ThemedSwitch';
+import ThemedView from '@/images/FadeInImage.tsx/shared/ThemedView';
 import { useState } from 'react';
-import { Switch } from 'react-native';
 
 const Switches = () => {
 
