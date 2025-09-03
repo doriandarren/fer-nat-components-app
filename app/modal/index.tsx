@@ -1,6 +1,7 @@
+import ThemedButton from '@/presentation/shared/ThemedButton';
 import ThemedText from '@/presentation/shared/ThemedText';
 import ThemedView from '@/presentation/shared/ThemedView';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 
 const ModalScreen = () => {
@@ -13,6 +14,15 @@ const ModalScreen = () => {
           Abrir Modal
         </ThemedText>
       </Link>
+
+
+      <ThemedButton
+         onPress={() => router.push('/modal/modal-window')}
+      >
+        Abrir modal
+      </ThemedButton>
+
+
     </ThemedView>
   );
 };
