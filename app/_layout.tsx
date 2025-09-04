@@ -9,6 +9,7 @@ import { Stack } from 'expo-router';
 import { allRoutes } from '@/constants/Routes';
 
 import "../global.css";
+import { ThemeChangerProvider } from '@/presentation/context/ThemeChangerContext';
 
 export default function RootLayout() {
 
@@ -28,7 +29,9 @@ export default function RootLayout() {
 
     <GestureHandlerRootView style={{ backgroundColor: backgroundColor, flex: 1 }}>
 
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+
+      {/* <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}> */}
+      <ThemeChangerProvider>
 
         {/* <ThemedView margin>
           <ThemedText className='mt-20'>Hola mundo</ThemedText>
@@ -47,12 +50,12 @@ export default function RootLayout() {
           }}
         >
 
-          <Stack.Screen 
-            name='index'
-            options={{
-              title: 'Component APP',
-            }}
-          />
+        <Stack.Screen 
+          name='index'
+          options={{
+            title: 'Component APP',
+          }}
+        />
 
           {
             allRoutes.map( (route) => (
@@ -66,10 +69,11 @@ export default function RootLayout() {
               />
             ))
           }
+          </Stack>
+        <StatusBar style="auto" />
 
-        </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+      {/* </ThemeProvider> */}
+      </ThemeChangerProvider>
 
 
     </GestureHandlerRootView>
